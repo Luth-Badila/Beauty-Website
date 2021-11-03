@@ -260,7 +260,46 @@ header ul li a {
     padding: 150px 0 0;
 }
 
-.sec3 h2 {
+.sec3-inner .next,
+.sec3-inner .prev {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+}
+
+.sec3-inner .prev {
+    left: inherit;
+    right: 180px;
+}
+
+.sec3-inner .next {
+    right: 90px;
+}
+
+.sec3-inner .next::before,
+.sec3-inner .prev::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff url(images/next-arrow.png) no-repeat;
+    background-size: 20px;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+.sec3-inner .prev::before {
+    background: #fff url(images/prev-arrow.png) no-repeat;
+    background-size: 20px;
+    background-position: center;
+}
+
+*/ .sec3 h2 {
     text-transform: uppercase;
     max-width: 60%;
 }
@@ -275,7 +314,8 @@ header ul li a {
     height: 250px;
 }
 
-.slick-arrow {
+
+/* .slick-arrow {
     position: absolute;
     top: -160px;
 }
@@ -309,7 +349,7 @@ header ul li a {
     background: #fff url(images/prev-arrow.png) no-repeat;
     background-size: 20px;
     background-position: center;
-}
+} */
 
 .sec4 {
     padding: 100px 0;
